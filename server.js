@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 
-const lambdaUrl = 'https://guxj9q9lk6.execute-api.us-east-2.amazonaws.com/say';  // Replace with your AWS Lambda API URL
+const lambdaUrl = 'https://guxj9q9lk6.execute-api.us-east-2.amazonaws.com/say';  
 
 app.get('/say', async (req, res) => {
     const keyword = req.query.keyword;
